@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Nimble
+
 @testable import GOT_Challenge_Swift
 
 class GOT_Challenge_SwiftTests: XCTestCase {
@@ -21,16 +23,20 @@ class GOT_Challenge_SwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTheCharacterFormalDescriptionComposedByNameAndDescription() {
+        let name = "Jonh Snow"
+        let description = "The king in the north!"
+        let character = CharactersGenerator.with(name: name, description: description)
+        let formalDescription = character.formalDescription
+        expect(formalDescription).to(equal("\(name) - \(description)"))
+
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testCharacterFormalDescriptionShouldIndicateTheDescriptionIsNotProvidedIfValueNil() {
+        let name = "Jaime Lannister"
+        let character = CharactersGenerator.with(name: name, description: nil)
+        let formalDescription = character.formalDescription
+        expect(formalDescription).to(equal("\(name) - No description provided."))
     }
     
 }
