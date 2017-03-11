@@ -1,15 +1,20 @@
 PODS:
   - Nimble (6.0.1)
   - Result (3.2.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - Nimble
   - Result
+  - SDWebImage
 
 SPEC CHECKSUMS:
   Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 7810117de5e7369d227aba8c006c9fd16359c800
+PODFILE CHECKSUM: 66dee922727b17675b89cea5b5993ebe34d441d7
 
 COCOAPODS: 1.2.0

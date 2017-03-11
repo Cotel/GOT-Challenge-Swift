@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E74B9ED8D3DE69AD288AB05 /* Pods_GOT_Challenge_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DE3E02364307997573F248 /* Pods_GOT_Challenge_Swift.framework */; };
+		CD1128FFE386C5E2FFAA6138 /* Pods_GOT_Challenge_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579708EB2A43EB98BD9D631D /* Pods_GOT_Challenge_SwiftTests.framework */; };
 		E23378A01E6DF6FA00F3E36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E233789F1E6DF6FA00F3E36C /* Assets.xcassets */; };
 		E23687E71E6C8C7100DEDACC /* CharactersError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23687E61E6C8C7100DEDACC /* CharactersError.swift */; };
 		E263F91A1E740AF300BDE31C /* CharactersGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F9191E740AF300BDE31C /* CharactersGenerator.swift */; };
+		E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */; };
+		E263F91E1E7441BC00BDE31C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91D1E7441BC00BDE31C /* Extensions.swift */; };
 		E28B659F1E7020EA000C0401 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B659E1E7020EA000C0401 /* Character.swift */; };
 		E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */; };
 		E2A1522E1E6C3E79003B7415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1522D1E6C3E79003B7415 /* ViewController.swift */; };
@@ -34,15 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22E4F6B3F894C0638EB9E533 /* Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C2BF6CC871228BC334D2133 /* Pods-GOT-Challenge-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-Swift/Pods-GOT-Challenge-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		39DAFB8BAFE8EC548DEC5E93 /* Pods-GOT-Challenge-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		579708EB2A43EB98BD9D631D /* Pods_GOT_Challenge_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOT_Challenge_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D2E3D71C9442F351F3D3BE /* Pods-GOT-Challenge-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-Swift/Pods-GOT-Challenge-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		B3DE3E02364307997573F248 /* Pods_GOT_Challenge_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOT_Challenge_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E709F89D4AD02C59B9FD9A /* Pods-GOT-Challenge-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7C326F9B721C0A171F26DAA /* Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E233789F1E6DF6FA00F3E36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23687E61E6C8C7100DEDACC /* CharactersError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersError.swift; path = ../CharactersError.swift; sourceTree = "<group>"; };
 		E263F9191E740AF300BDE31C /* CharactersGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersGenerator.swift; sourceTree = "<group>"; };
+		E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		E263F91D1E7441BC00BDE31C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E28B659E1E7020EA000C0401 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		E2A152281E6C3E79003B7415 /* GOT-Challenge-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOT-Challenge-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E74B9ED8D3DE69AD288AB05 /* Pods_GOT_Challenge_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1128FFE386C5E2FFAA6138 /* Pods_GOT_Challenge_SwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 		9D685935237CED8C4B1CB524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DE3E02364307997573F248 /* Pods_GOT_Challenge_Swift.framework */,
+				579708EB2A43EB98BD9D631D /* Pods_GOT_Challenge_SwiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 				E233789F1E6DF6FA00F3E36C /* Assets.xcassets */,
 				E2A152371E6C3E79003B7415 /* Info.plist */,
 				E2A1524B1E6C3E88003B7415 /* Character.swift */,
+				E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */,
+				E263F91D1E7441BC00BDE31C /* Extensions.swift */,
 			);
 			path = "GOT-Challenge-Swift";
 			sourceTree = "<group>";
@@ -148,8 +160,6 @@
 			children = (
 				A0D2E3D71C9442F351F3D3BE /* Pods-GOT-Challenge-Swift.debug.xcconfig */,
 				2C2BF6CC871228BC334D2133 /* Pods-GOT-Challenge-Swift.release.xcconfig */,
-				B7C326F9B721C0A171F26DAA /* Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.debug.xcconfig */,
-				22E4F6B3F894C0638EB9E533 /* Pods-GOT-Challenge-Swift-GOT-Challenge-SwiftTests.release.xcconfig */,
 				B6E709F89D4AD02C59B9FD9A /* Pods-GOT-Challenge-SwiftTests.debug.xcconfig */,
 				39DAFB8BAFE8EC548DEC5E93 /* Pods-GOT-Challenge-SwiftTests.release.xcconfig */,
 			);
@@ -361,12 +371,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A1524E1E6C4506003B7415 /* CharactersViewController.swift in Sources */,
+				E263F91E1E7441BC00BDE31C /* Extensions.swift in Sources */,
 				E2A1524C1E6C3E88003B7415 /* Character.swift in Sources */,
 				E23687E71E6C8C7100DEDACC /* CharactersError.swift in Sources */,
 				E2A152511E6C8B1B003B7415 /* FakeCharactersAPIClient.swift in Sources */,
 				E2A1522E1E6C3E79003B7415 /* ViewController.swift in Sources */,
 				E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */,
 				E2A152531E6C8B46003B7415 /* CharactersAPIClient.swift in Sources */,
+				E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
