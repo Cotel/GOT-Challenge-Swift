@@ -12,6 +12,7 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
 
     @IBOutlet weak var tableView: UITableView!
 
+
     var apiclient: FakeCharactersAPIClient = FakeCharactersAPIClient()
     var characters = [Character]() {
         didSet{
@@ -20,13 +21,10 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
 
-
-        tableView.separatorInset = .zero
-        tableView.sectionHeaderHeight = 0
-
+        configureNavigationBarBackButton()
+        configureNavigationBarTitle()
+        configTableView()
         apiclient.getAllCharacters{ result in
             switch result {
             case .success(let characters):
@@ -38,6 +36,23 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
                 
             }
         }
+    }
+
+    fileprivate func configureNavigationBarTitle() {
+        title = "Game of Thrones Challenge"
+    }
+
+    fileprivate func configureNavigationBarBackButton() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+    }
+
+    func configTableView()  {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+
+        tableView.separatorInset = .zero
+        tableView.sectionHeaderHeight = 0
     }
 
 
@@ -53,9 +68,11 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let superHero = characters[(indexPath as NSIndexPath).row]
-        //let viewController = SuperHeroesDetectorServiceLocator.provideSuperHeroDetailViewController(superHero)
-        //navigationController?.pushViewController(viewController, animated: true)
+            let character = characters[indexPath.row]
+        let storyBoard = UIStoryboard(name: "GOT", bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "CharacterDetailViewController") as! CharacterDetailViewController
+        viewController.character = character
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 
