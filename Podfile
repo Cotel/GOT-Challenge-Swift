@@ -13,6 +13,7 @@ target 'GOT-Challenge-Swift' do
     inherit! :search_paths
     # Pods for testing
     pod 'Nimble'
+    pod 'KIF'
   end
 
 end

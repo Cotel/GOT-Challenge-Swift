@@ -13,13 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
         window = UIWindow(frame:UIScreen.main.bounds)
         installRootViewControllerIntoWindow(window)
-        
+
         configureWindow()
         configureNavigationBarStyle()
         self.window!.makeKeyAndVisible()
@@ -42,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearance.tintColor = UIColor.navigationBarTitleColor
         navigationBarAppearance.isTranslucent = false
         navigationBarAppearance.titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.navigationBarTitleColor
+            NSForegroundColorAttributeName: UIColor.navigationBarTitleColor
         ]
     }
 }

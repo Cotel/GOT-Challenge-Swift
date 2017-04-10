@@ -12,17 +12,17 @@ import Nimble
 @testable import GOT_Challenge_Swift
 
 class GOT_Challenge_SwiftTests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testTheCharacterFormalDescriptionComposedByNameAndDescription() {
         let name = "Jonh Snow"
         let description = "The king in the north!"
@@ -38,5 +38,5 @@ class GOT_Challenge_SwiftTests: XCTestCase {
         let formalDescription = character.formalDescription
         expect(formalDescription).to(equal("\(name) - No description provided."))
     }
-    
+
 }

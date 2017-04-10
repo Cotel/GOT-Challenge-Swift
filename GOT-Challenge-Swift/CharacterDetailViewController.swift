@@ -10,7 +10,6 @@ import UIKit
 
 class CharacterDetailViewController: UIViewController {
 
-
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
