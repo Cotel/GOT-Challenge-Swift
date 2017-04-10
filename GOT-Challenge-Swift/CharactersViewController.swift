@@ -12,10 +12,9 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
 
     @IBOutlet weak var tableView: UITableView!
 
-
     var apiclient: FakeCharactersAPIClient = FakeCharactersAPIClient()
     var characters = [Character]() {
-        didSet{
+        didSet {
             tableView.reloadData()
         }
     }
@@ -25,7 +24,7 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
         configureNavigationBarBackButton()
         configureNavigationBarTitle()
         configTableView()
-        apiclient.getAllCharacters{ result in
+        apiclient.getAllCharacters { result in
             switch result {
             case .success(let characters):
                 self.characters = characters
@@ -33,7 +32,7 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
             case .failure(let error):
                 print(error)
                 break
-                
+
             }
         }
     }
@@ -46,22 +45,20 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
     }
 
-    func configTableView()  {
+    func configTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
-
         tableView.separatorInset = .zero
         tableView.sectionHeaderHeight = 0
     }
-
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterTableViewCell", for: indexPath) as! CharacterTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! CharacterTableViewCell
         let character = characters[(indexPath as NSIndexPath).row]
         cell.configureForCharacter(character)
         return cell
@@ -74,6 +71,5 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
         viewController.character = character
         navigationController?.pushViewController(viewController, animated: true)
     }
-    
 
 }

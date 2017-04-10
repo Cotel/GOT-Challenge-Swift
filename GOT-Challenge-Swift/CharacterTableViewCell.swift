@@ -15,8 +15,8 @@ class CharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
 }
 
-extension CharacterTableViewCell{
-    func configureForCharacter(_ character: Character){
+extension CharacterTableViewCell {
+    func configureForCharacter(_ character: Character) {
         nameLabel.text = character.name
         characterImageView.sd_setImage(with: character.image)
         self.layoutSubviews()

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:GOT-Challenge-Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E21D98DE1E7ABD2C00693250"
+               BuildableName = "GOT-Challenge-SwiftUITests.xctest"
+               BlueprintName = "GOT-Challenge-SwiftUITests"
+               ReferencedContainer = "container:GOT-Challenge-Swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

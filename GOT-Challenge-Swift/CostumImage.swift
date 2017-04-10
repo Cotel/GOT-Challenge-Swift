@@ -6,13 +6,9 @@
 //  Copyright © 2017 conradomateu. All rights reserved.
 //
 
-
-
 import Foundation
 import UIKit
 
-
 class CostumImage: UIImageView {
 }
-
 

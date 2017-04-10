@@ -10,6 +10,9 @@
 		2E74B9ED8D3DE69AD288AB05 /* Pods_GOT_Challenge_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DE3E02364307997573F248 /* Pods_GOT_Challenge_Swift.framework */; };
 		CD1128FFE386C5E2FFAA6138 /* Pods_GOT_Challenge_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579708EB2A43EB98BD9D631D /* Pods_GOT_Challenge_SwiftTests.framework */; };
 		E212E9C91E793C5D006C6DD4 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212E9C81E793C5D006C6DD4 /* CharacterDetailViewController.swift */; };
+		E21D98EB1E7ABE0B00693250 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D98EA1E7ABE0B00693250 /* XCTestCase.swift */; };
+		E21D98ED1E7ABE2800693250 /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D98EC1E7ABE2800693250 /* KIFTestActor.swift */; };
+		E21D98EF1E7ABFD400693250 /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D98EE1E7ABFD400693250 /* UITesting.swift */; };
 		E23378A01E6DF6FA00F3E36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E233789F1E6DF6FA00F3E36C /* Assets.xcassets */; };
 		E23687E71E6C8C7100DEDACC /* CharactersError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23687E61E6C8C7100DEDACC /* CharactersError.swift */; };
 		E263F91A1E740AF300BDE31C /* CharactersGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F9191E740AF300BDE31C /* CharactersGenerator.swift */; };
@@ -46,6 +49,9 @@
 		B3DE3E02364307997573F248 /* Pods_GOT_Challenge_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOT_Challenge_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E709F89D4AD02C59B9FD9A /* Pods-GOT-Challenge-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOT-Challenge-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E212E9C81E793C5D006C6DD4 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		E21D98EA1E7ABE0B00693250 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		E21D98EC1E7ABE2800693250 /* KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestActor.swift; sourceTree = "<group>"; };
+		E21D98EE1E7ABFD400693250 /* UITesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITesting.swift; sourceTree = "<group>"; };
 		E233789F1E6DF6FA00F3E36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23687E61E6C8C7100DEDACC /* CharactersError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersError.swift; path = ../CharactersError.swift; sourceTree = "<group>"; };
 		E263F9191E740AF300BDE31C /* CharactersGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersGenerator.swift; sourceTree = "<group>"; };
@@ -176,6 +182,9 @@
 				E2A152421E6C3E79003B7415 /* Info.plist */,
 				E28B659E1E7020EA000C0401 /* Character.swift */,
 				E263F9191E740AF300BDE31C /* CharactersGenerator.swift */,
+				E21D98EA1E7ABE0B00693250 /* XCTestCase.swift */,
+				E21D98EC1E7ABE2800693250 /* KIFTestActor.swift */,
+				E21D98EE1E7ABFD400693250 /* UITesting.swift */,
 			);
 			path = "GOT-Challenge-SwiftTests";
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 				E2A152261E6C3E79003B7415 /* Resources */,
 				E7E4154984E517F4A43B7C94 /* [CP] Embed Pods Frameworks */,
 				362DC2011346B94227243B5B /* [CP] Copy Pods Resources */,
+				E20D49691E9A50F5007C2A7B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,6 +276,7 @@
 					E2A152271E6C3E79003B7415 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 596PS285KG;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E2A1523B1E6C3E79003B7415 = {
@@ -391,6 +402,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E20D49691E9A50F5007C2A7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		E7E4154984E517F4A43B7C94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,8 +454,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21D98ED1E7ABE2800693250 /* KIFTestActor.swift in Sources */,
+				E21D98EB1E7ABE0B00693250 /* XCTestCase.swift in Sources */,
 				E2A152411E6C3E79003B7415 /* GOT_Challenge_SwiftTests.swift in Sources */,
 				E28B659F1E7020EA000C0401 /* Character.swift in Sources */,
+				E21D98EF1E7ABFD400693250 /* UITesting.swift in Sources */,
 				E2F4B1E21E71F284009DC829 /* MockCharactersAPIClient.swift in Sources */,
 				E263F91A1E740AF300BDE31C /* CharactersGenerator.swift in Sources */,
 			);
@@ -512,6 +539,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -553,6 +581,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -564,13 +593,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 596PS285KG;
 				INFOPLIST_FILE = "GOT-Challenge-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.conradomateu.GOT-Challenge-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -580,6 +612,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 596PS285KG;
 				INFOPLIST_FILE = "GOT-Challenge-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -587,6 +620,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.conradomateu.GOT-Challenge-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

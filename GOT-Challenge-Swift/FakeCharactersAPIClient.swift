@@ -11,9 +11,6 @@ import Result
 
 class FakeCharactersAPIClient: CharactersAPIClient {
 
-
-
-
     fileprivate let characters: [Character]
 
     init() {

@@ -15,9 +15,9 @@ class MockCharactersAPIClient: CharactersAPIClient {
     var getCharactersError: CharactersError?
 
     func getAllCharacters(_ completion: (Result<[GOT_Challenge_Swift.Character], CharactersError>) -> Void) {
-        if let characters = characters{
+        if let characters = characters {
             completion(Result(characters))
-        } else if let getCharactersError = getCharactersError{
+        } else if let getCharactersError = getCharactersError {
             completion(Result(error: getCharactersError))
         }
 
