@@ -18,6 +18,7 @@
 		E263F91A1E740AF300BDE31C /* CharactersGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F9191E740AF300BDE31C /* CharactersGenerator.swift */; };
 		E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */; };
 		E263F91E1E7441BC00BDE31C /* CostumImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91D1E7441BC00BDE31C /* CostumImage.swift */; };
+		E2748DB61EA7879700444532 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DB51EA7879700444532 /* R.generated.swift */; };
 		E28B659F1E7020EA000C0401 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B659E1E7020EA000C0401 /* Character.swift */; };
 		E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */; };
 		E2A152311E6C3E79003B7415 /* GOT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A1522F1E6C3E79003B7415 /* GOT.storyboard */; };
@@ -57,6 +58,7 @@
 		E263F9191E740AF300BDE31C /* CharactersGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersGenerator.swift; sourceTree = "<group>"; };
 		E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		E263F91D1E7441BC00BDE31C /* CostumImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostumImage.swift; sourceTree = "<group>"; };
+		E2748DB51EA7879700444532 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		E28B659E1E7020EA000C0401 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		E2A152281E6C3E79003B7415 /* GOT-Challenge-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOT-Challenge-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				E212E9CD1E7950EE006C6DD4 /* Controllers */,
 				E212E9CC1E7950AF006C6DD4 /* Model */,
 				E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */,
+				E2748DB51EA7879700444532 /* R.generated.swift */,
 				E233789F1E6DF6FA00F3E36C /* Assets.xcassets */,
 				E2A152371E6C3E79003B7415 /* Info.plist */,
 			);
@@ -231,7 +234,8 @@
 				E2A152261E6C3E79003B7415 /* Resources */,
 				E7E4154984E517F4A43B7C94 /* [CP] Embed Pods Frameworks */,
 				362DC2011346B94227243B5B /* [CP] Copy Pods Resources */,
-				E20D49691E9A50F5007C2A7B /* ShellScript */,
+				E20D49691E9A50F5007C2A7B /* Run Script */,
+				E2748DB41EA7869700444532 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -402,7 +406,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GOT-Challenge-SwiftTests/Pods-GOT-Challenge-SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E20D49691E9A50F5007C2A7B /* ShellScript */ = {
+		E20D49691E9A50F5007C2A7B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		E2748DB41EA7869700444532 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"\n";
 		};
 		E7E4154984E517F4A43B7C94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -446,6 +464,7 @@
 				E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */,
 				E2A152531E6C8B46003B7415 /* CharactersAPIClient.swift in Sources */,
 				E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */,
+				E2748DB61EA7879700444532 /* R.generated.swift in Sources */,
 				E2D384771E75F81200010CA5 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

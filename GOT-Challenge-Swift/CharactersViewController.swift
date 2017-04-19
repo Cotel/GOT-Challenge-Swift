@@ -58,18 +58,17 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! CharacterTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.characterTableViewCell, for: indexPath) 
         let character = characters[(indexPath as NSIndexPath).row]
-        cell.configureForCharacter(character)
-        return cell
+        cell?.configureForCharacter(character)
+        return cell!
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let character = characters[indexPath.row]
-        let storyBoard = UIStoryboard(name: "GOT", bundle: Bundle.main)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "CharacterDetailViewController") as! CharacterDetailViewController
-        viewController.character = character
-        navigationController?.pushViewController(viewController, animated: true)
+        let character = characters[indexPath.row]
+        let viewController = R.storyboard.gOT.characterDetailViewController()
+        viewController?.character = character
+        navigationController?.pushViewController(viewController!, animated: true)
     }
 
 }

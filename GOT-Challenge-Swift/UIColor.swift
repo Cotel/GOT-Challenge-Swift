@@ -95,6 +95,5 @@ extension UIColor {
     static var cellBackgroundColor: UIColor {
         return UIColor(rgba: "#22282fFF")
     }
-
 }
 

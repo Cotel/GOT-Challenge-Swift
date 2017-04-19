@@ -6,7 +6,7 @@ target 'GOT-Challenge-Swift' do
   use_frameworks!
     pod 'Result'
     pod 'SDWebImage'
-
+    pod 'R.swift'
   # Pods for GOT-Challenge-Swift
 
   target 'GOT-Challenge-SwiftTests' do

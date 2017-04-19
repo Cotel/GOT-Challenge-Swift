@@ -41,3 +41,6 @@ Pods/
 # Carthage/Checkouts
 
 Carthage/Build
+
+#R.Swift
+*.generated.swift

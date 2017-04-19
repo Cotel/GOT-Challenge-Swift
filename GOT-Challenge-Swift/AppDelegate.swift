@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     fileprivate func installRootViewControllerIntoWindow(_ window: UIWindow?) {
         let storyboard = UIStoryboard(name: "GOT", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CharactersViewController")
-        window?.rootViewController = UINavigationController(rootViewController: vc)
+        window?.rootViewController = UINavigationController(rootViewController: R.storyboard.gOT.charactersViewController()!)
     }
     fileprivate func configureWindow() {
         window?.backgroundColor = UIColor.windowBackgroundColor
