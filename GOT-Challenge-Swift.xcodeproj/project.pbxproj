@@ -19,6 +19,11 @@
 		E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */; };
 		E263F91E1E7441BC00BDE31C /* CostumImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263F91D1E7441BC00BDE31C /* CostumImage.swift */; };
 		E2748DB61EA7879700444532 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DB51EA7879700444532 /* R.generated.swift */; };
+		E2748DBC1EA7BB6D00444532 /* RouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DBB1EA7BB6D00444532 /* RouterContract.swift */; };
+		E2748DBE1EA7BBBE00444532 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DBD1EA7BBBE00444532 /* RootRouter.swift */; };
+		E2748DC01EA7BC7100444532 /* CharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DBF1EA7BC7100444532 /* CharactersRouter.swift */; };
+		E2748DC21EA7BC9900444532 /* CharactersContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DC11EA7BC9900444532 /* CharactersContract.swift */; };
+		E2748DC51EA7BD4B00444532 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748DC41EA7BD4B00444532 /* View.swift */; };
 		E28B659F1E7020EA000C0401 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B659E1E7020EA000C0401 /* Character.swift */; };
 		E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */; };
 		E2A152311E6C3E79003B7415 /* GOT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A1522F1E6C3E79003B7415 /* GOT.storyboard */; };
@@ -29,6 +34,12 @@
 		E2A152511E6C8B1B003B7415 /* FakeCharactersAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A152501E6C8B1B003B7415 /* FakeCharactersAPIClient.swift */; };
 		E2A152531E6C8B46003B7415 /* CharactersAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A152521E6C8B46003B7415 /* CharactersAPIClient.swift */; };
 		E2D384771E75F81200010CA5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D384761E75F81200010CA5 /* UIColor.swift */; };
+		E2E246EF1EA7ED5F00622D68 /* IndicatableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246EE1EA7ED5F00622D68 /* IndicatableViewExtension.swift */; };
+		E2E246F11EA7EE6800622D68 /* CharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246F01EA7EE6800622D68 /* CharactersPresenter.swift */; };
+		E2E246F31EA7EFA000622D68 /* CharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246F21EA7EFA000622D68 /* CharactersInteractor.swift */; };
+		E2E246F51EA7F1FE00622D68 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246F41EA7F1FE00622D68 /* DetailsRouter.swift */; };
+		E2E246F71EA7F23500622D68 /* DetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246F61EA7F23500622D68 /* DetailsContract.swift */; };
+		E2E246F91EA7F57D00622D68 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E246F81EA7F57D00622D68 /* DetailsPresenter.swift */; };
 		E2F4B1E21E71F284009DC829 /* MockCharactersAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4B1E11E71F284009DC829 /* MockCharactersAPIClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +70,11 @@
 		E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		E263F91D1E7441BC00BDE31C /* CostumImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostumImage.swift; sourceTree = "<group>"; };
 		E2748DB51EA7879700444532 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		E2748DBB1EA7BB6D00444532 /* RouterContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterContract.swift; sourceTree = "<group>"; };
+		E2748DBD1EA7BBBE00444532 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		E2748DBF1EA7BC7100444532 /* CharactersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersRouter.swift; sourceTree = "<group>"; };
+		E2748DC11EA7BC9900444532 /* CharactersContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersContract.swift; sourceTree = "<group>"; };
+		E2748DC41EA7BD4B00444532 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		E28B659E1E7020EA000C0401 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		E2A152281E6C3E79003B7415 /* GOT-Challenge-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOT-Challenge-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +89,12 @@
 		E2A152501E6C8B1B003B7415 /* FakeCharactersAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCharactersAPIClient.swift; sourceTree = "<group>"; };
 		E2A152521E6C8B46003B7415 /* CharactersAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersAPIClient.swift; sourceTree = "<group>"; };
 		E2D384761E75F81200010CA5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E2E246EE1EA7ED5F00622D68 /* IndicatableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatableViewExtension.swift; sourceTree = "<group>"; };
+		E2E246F01EA7EE6800622D68 /* CharactersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersPresenter.swift; sourceTree = "<group>"; };
+		E2E246F21EA7EFA000622D68 /* CharactersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersInteractor.swift; sourceTree = "<group>"; };
+		E2E246F41EA7F1FE00622D68 /* DetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		E2E246F61EA7F23500622D68 /* DetailsContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsContract.swift; sourceTree = "<group>"; };
+		E2E246F81EA7F57D00622D68 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		E2F4B1E11E71F284009DC829 /* MockCharactersAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCharactersAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,16 +135,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		E212E9CD1E7950EE006C6DD4 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E212E9C81E793C5D006C6DD4 /* CharacterDetailViewController.swift */,
-				E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */,
-				E2A1524D1E6C4506003B7415 /* CharactersViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		E212E9CE1E795105006C6DD4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,56 @@
 				E2A152341E6C3E79003B7415 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2748DB71EA7BB1100444532 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E2748DBA1EA7BB5600444532 /* Details */,
+				E2748DB91EA7BB3100444532 /* Characters */,
+				E2748DB81EA7BB2B00444532 /* Root */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		E2748DB81EA7BB2B00444532 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E2748DBB1EA7BB6D00444532 /* RouterContract.swift */,
+				E2748DBD1EA7BBBE00444532 /* RootRouter.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		E2748DB91EA7BB3100444532 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8B63C1EAA93DA00ACFD80 /* View */,
+				E2B8B63B1EAA93CF00ACFD80 /* Presenter */,
+				E2B8B63A1EAA93C300ACFD80 /* Interactor */,
+				E2B8B6381EAA93BA00ACFD80 /* Router */,
+				E2748DC11EA7BC9900444532 /* CharactersContract.swift */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+		E2748DBA1EA7BB5600444532 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8B63F1EAA941100ACFD80 /* Presenter */,
+				E2B8B63E1EAA940600ACFD80 /* View */,
+				E2B8B63D1EAA940000ACFD80 /* Router */,
+				E2E246F61EA7F23500622D68 /* DetailsContract.swift */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		E2748DC31EA7BD3300444532 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2748DC41EA7BD4B00444532 /* View.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		E2A1521F1E6C3E79003B7415 = {
@@ -164,10 +226,12 @@
 		E2A1522A1E6C3E79003B7415 /* GOT-Challenge-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E2E246ED1EA7ED4100622D68 /* Extensions */,
+				E2748DC31EA7BD3300444532 /* Protocols */,
+				E2748DB71EA7BB1100444532 /* Modules */,
 				E2D384781E75F81A00010CA5 /* Extensions */,
 				E212E9CF1E795124006C6DD4 /* Storyboards */,
 				E212E9CE1E795105006C6DD4 /* Network */,
-				E212E9CD1E7950EE006C6DD4 /* Controllers */,
 				E212E9CC1E7950AF006C6DD4 /* Model */,
 				E2A1522B1E6C3E79003B7415 /* AppDelegate.swift */,
 				E2748DB51EA7879700444532 /* R.generated.swift */,
@@ -201,11 +265,76 @@
 			name = "API Client";
 			sourceTree = "<group>";
 		};
+		E2B8B6381EAA93BA00ACFD80 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E2748DBF1EA7BC7100444532 /* CharactersRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		E2B8B63A1EAA93C300ACFD80 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E2E246F21EA7EFA000622D68 /* CharactersInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		E2B8B63B1EAA93CF00ACFD80 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2E246F01EA7EE6800622D68 /* CharactersPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E2B8B63C1EAA93DA00ACFD80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1524D1E6C4506003B7415 /* CharactersViewController.swift */,
+				E263F91B1E74211700BDE31C /* CharacterTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E2B8B63D1EAA940000ACFD80 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E2E246F41EA7F1FE00622D68 /* DetailsRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		E2B8B63E1EAA940600ACFD80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E212E9C81E793C5D006C6DD4 /* CharacterDetailViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E2B8B63F1EAA941100ACFD80 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2E246F81EA7F57D00622D68 /* DetailsPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
 		E2D384781E75F81A00010CA5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				E263F91D1E7441BC00BDE31C /* CostumImage.swift */,
 				E2D384761E75F81200010CA5 /* UIColor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E2E246ED1EA7ED4100622D68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2E246EE1EA7ED5F00622D68 /* IndicatableViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -418,7 +547,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "";
 		};
 		E2748DB41EA7869700444532 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -455,16 +584,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2748DC51EA7BD4B00444532 /* View.swift in Sources */,
 				E212E9C91E793C5D006C6DD4 /* CharacterDetailViewController.swift in Sources */,
 				E2A1524E1E6C4506003B7415 /* CharactersViewController.swift in Sources */,
+				E2748DC21EA7BC9900444532 /* CharactersContract.swift in Sources */,
 				E263F91E1E7441BC00BDE31C /* CostumImage.swift in Sources */,
+				E2E246F91EA7F57D00622D68 /* DetailsPresenter.swift in Sources */,
+				E2E246F31EA7EFA000622D68 /* CharactersInteractor.swift in Sources */,
+				E2748DBE1EA7BBBE00444532 /* RootRouter.swift in Sources */,
+				E2E246EF1EA7ED5F00622D68 /* IndicatableViewExtension.swift in Sources */,
 				E2A1524C1E6C3E88003B7415 /* Character.swift in Sources */,
+				E2E246F11EA7EE6800622D68 /* CharactersPresenter.swift in Sources */,
 				E23687E71E6C8C7100DEDACC /* CharactersError.swift in Sources */,
 				E2A152511E6C8B1B003B7415 /* FakeCharactersAPIClient.swift in Sources */,
+				E2748DBC1EA7BB6D00444532 /* RouterContract.swift in Sources */,
+				E2E246F51EA7F1FE00622D68 /* DetailsRouter.swift in Sources */,
 				E2A1522C1E6C3E79003B7415 /* AppDelegate.swift in Sources */,
 				E2A152531E6C8B46003B7415 /* CharactersAPIClient.swift in Sources */,
 				E263F91C1E74211700BDE31C /* CharacterTableViewCell.swift in Sources */,
 				E2748DB61EA7879700444532 /* R.generated.swift in Sources */,
+				E2E246F71EA7F23500622D68 /* DetailsContract.swift in Sources */,
+				E2748DC01EA7BC7100444532 /* CharactersRouter.swift in Sources */,
 				E2D384771E75F81200010CA5 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

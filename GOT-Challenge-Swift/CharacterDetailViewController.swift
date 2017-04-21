@@ -8,23 +8,22 @@
 
 import UIKit
 
-class CharacterDetailViewController: UIViewController {
+class CharacterDetailViewController: UIViewController, DetailsView {
 
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-
-    var character: Character!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        show()
-    }
-    func show() {
+    var presenter: DetailsPresentation!
+    func showDetails(forCharacter character: Character) {
         self.title = character.name
         nameLabel.text = character.name
         descriptionLabel.text = "Description: " + character.description!
         characterImage
             .sd_setImage(with: character.image as URL!)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.presenter.viewDidLoad()
     }
 }

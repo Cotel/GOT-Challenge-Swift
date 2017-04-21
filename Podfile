@@ -7,6 +7,7 @@ target 'GOT-Challenge-Swift' do
     pod 'Result'
     pod 'SDWebImage'
     pod 'R.swift'
+    pod 'PKHUD'
   # Pods for GOT-Challenge-Swift
 
   target 'GOT-Challenge-SwiftTests' do

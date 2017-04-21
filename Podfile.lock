@@ -3,6 +3,7 @@ PODS:
     - KIF/Core (= 3.5.1)
   - KIF/Core (3.5.1)
   - Nimble (6.0.1)
+  - PKHUD (4.2.0)
   - R.swift (3.2.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
@@ -14,6 +15,7 @@ PODS:
 DEPENDENCIES:
   - KIF
   - Nimble
+  - PKHUD
   - R.swift
   - Result
   - SDWebImage
@@ -21,11 +23,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   KIF: '082eb65279e51c3092923802849eb796a04982ab'
   Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  PKHUD: 48af884cf00c2213b0313b739d914e6cab1c0f5e
   R.swift: 207a372a2b5977caef440c696a368009460641d1
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 838c66356ff0444b3591998bc50c96380eb48e97
+PODFILE CHECKSUM: 013ee9d9746719e578d0faaab357a14b7570e982
 
 COCOAPODS: 1.2.0

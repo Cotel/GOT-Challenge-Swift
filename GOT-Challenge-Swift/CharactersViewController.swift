@@ -11,30 +11,21 @@ import UIKit
 class CharactersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-
-    var apiclient: FakeCharactersAPIClient = FakeCharactersAPIClient()
+    var presenter: CharactersPresentation!
     var characters = [Character]() {
         didSet {
             tableView.reloadData()
         }
     }
+
+
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        presenter.viewDidLoad()
+        setUpView()
 
-        configureNavigationBarBackButton()
-        configureNavigationBarTitle()
-        configTableView()
-        apiclient.getAllCharacters { result in
-            switch result {
-            case .success(let characters):
-                self.characters = characters
-                break
-            case .failure(let error):
-                print(error)
-                break
 
-            }
-        }
     }
 
     fileprivate func configureNavigationBarTitle() {
@@ -43,6 +34,12 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
 
     fileprivate func configureNavigationBarBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+    }
+
+    func setUpView() {
+        configureNavigationBarBackButton()
+        configureNavigationBarTitle()
+        configTableView()
     }
 
     func configTableView() {
@@ -65,10 +62,14 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let character = characters[indexPath.row]
-        let viewController = R.storyboard.gOT.characterDetailViewController()
-        viewController?.character = character
-        navigationController?.pushViewController(viewController!, animated: true)
+        presenter.didSelectCharacter(characters[indexPath.row])
     }
 
+}
+extension CharactersViewController: CharactersView{
+    func showNoContentScreen() {
+    }
+    func showCharactersData(_ characters: [Character]) {
+        self.characters = characters
+    }
 }
