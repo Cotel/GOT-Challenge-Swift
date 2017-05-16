@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 
-class CharactersRouter: CharactersWireframe{
+class CharactersRouter {
     weak var viewController: UIViewController?
     static func assembleModule() -> UIViewController {
         let view = R.storyboard.gOT.charactersViewController()

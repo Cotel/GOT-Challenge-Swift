@@ -3,7 +3,7 @@ import Foundation
 class CharactersPresenter {
     var view: CharactersListView?
     var getAllCharacters: CharacterListInteractor!
-    var router: CharactersWireframe!
+    var router: CharactersRouter!
     var characters = [Character](){
         didSet {
             if characters.count > 0 {
