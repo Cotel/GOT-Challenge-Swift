@@ -1,11 +1,3 @@
-//
-//  CharactersRouter.swift
-//  GOT-Challenge-Swift
-//
-//  Created by Conrado Mateu Gisbert on 19/04/17.
-//  Copyright © 2017 conradomateu. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -14,18 +6,20 @@ class CharactersRouter: CharactersWireframe{
     weak var viewController: UIViewController?
     static func assembleModule() -> UIViewController {
         let view = R.storyboard.gOT.charactersViewController()
+        let datasource = FakeCharactersAPIClient()
+        let getAllCharacters = CharacterListInteractor()
         let presenter = CharactersPresenter()
-        let interactor = CharactersInteractor()
         let router = CharactersRouter()
 
         let navigation = UINavigationController(rootViewController: view!)
         view?.presenter = presenter
 
         presenter.view = view
-        presenter.interactor = interactor
+        presenter.getAllCharacters = getAllCharacters
         presenter.router = router
 
-        interactor.output = presenter
+        getAllCharacters.datasource = datasource
+        getAllCharacters.output = presenter
 
         router.viewController = view
         

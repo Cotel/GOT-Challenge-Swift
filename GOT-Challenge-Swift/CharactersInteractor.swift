@@ -1,28 +1,26 @@
-//
-//  CharactersInteractor.swift
-//  GOT-Challenge-Swift
-//
-//  Created by Conrado Mateu Gisbert on 19/04/17.
-//  Copyright © 2017 conradomateu. All rights reserved.
-//
-
 import Foundation
 
 
-class CharactersInteractor: CharactersUseCase {
-    weak var output: CharactersInteractorOutput!
-    var apiclient: CharactersAPIClient = FakeCharactersAPIClient()
-    func fetchCharacters() {
-        apiclient.getAllCharacters { result in
+class CharacterListInteractor: Command {
+    var output: CharacterListOutput!
+    var datasource: CharacterDAO!
+    
+    func execute() {
+        datasource.getAllCharacters { result in
             switch result {
             case .success(let characters):
-                self.output.charactersFetched(characters)
+                self.output.charactersSuccess(characters: characters)
                 break
             case .failure( _):
-                self.output.charactersFetchFailed()
+                self.output.charactersFail(error: CharactersError(message: "Hubo un error"))
                 break
 
             }
         }
     }
+}
+
+protocol CharacterListOutput {
+    func charactersSuccess(characters: [Character])
+    func charactersFail(error: CharactersError)
 }

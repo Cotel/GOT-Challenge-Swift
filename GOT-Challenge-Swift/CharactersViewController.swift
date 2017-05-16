@@ -11,7 +11,7 @@ import UIKit
 class CharactersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    var presenter: CharactersPresentation!
+    var presenter: CharactersPresenter!
     var characters = [Character]() {
         didSet {
             tableView.reloadData()
@@ -66,10 +66,10 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     }
 
 }
-extension CharactersViewController: CharactersView{
+extension CharactersViewController: CharactersListView, IndicatableView {
     func showNoContentScreen() {
     }
-    func showCharactersData(_ characters: [Character]) {
+    func showCharactersData(characters: [Character]) {
         self.characters = characters
     }
 }

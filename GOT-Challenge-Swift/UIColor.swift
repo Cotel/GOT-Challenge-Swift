@@ -1,11 +1,3 @@
-//
-//  UIColor.swift
-//  GOT-Challenge-Swift
-//
-//  Created by Conrado Mateu Gisbert on 12/03/17.
-//  Copyright © 2017 conradomateu. All rights reserved.
-//
-
 import Foundation
 
 import Foundation

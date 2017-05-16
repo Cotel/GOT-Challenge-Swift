@@ -1,15 +1,7 @@
-//
-//  FakeCharactersAPIClient.swift
-//  GOT-Challenge-Swift
-//
-//  Created by Conrado Mateu Gisbert on 05/03/17.
-//  Copyright © 2017 conradomateu. All rights reserved.
-//
-
 import Foundation
 import Result
 
-class FakeCharactersAPIClient: CharactersAPIClient {
+class FakeCharactersAPIClient: CharacterDAO {
 
     fileprivate let characters: [Character]
 
@@ -107,7 +99,8 @@ class FakeCharactersAPIClient: CharactersAPIClient {
         ]
 
     }
-    func getAllCharacters(_ completion: (Result<[Character], CharactersError>) -> Void) {
+    
+    func getAllCharacters(completion: (Result<[Character], CharactersError>) -> Void) {
         completion(Result(characters))
     }
 }

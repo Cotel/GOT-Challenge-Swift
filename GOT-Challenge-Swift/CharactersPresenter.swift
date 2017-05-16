@@ -1,43 +1,43 @@
-//
-//  CharactersPresenter.swift
-//  GOT-Challenge-Swift
-//
-//  Created by Conrado Mateu Gisbert on 19/04/17.
-//  Copyright © 2017 conradomateu. All rights reserved.
-//
-
 import Foundation
 
-class CharactersPresenter: CharactersPresentation{
-    weak var view: CharactersView?
-    var interactor: CharactersUseCase!
+class CharactersPresenter {
+    var view: CharactersListView?
+    var getAllCharacters: CharacterListInteractor!
     var router: CharactersWireframe!
     var characters = [Character](){
         didSet {
             if characters.count > 0 {
-                view?.showCharactersData(characters)
+                view?.showCharactersData(characters: characters)
             } else {
                 view?.showNoContentScreen()
             }
         }
     }
+    
     func didSelectCharacter(_ character: Character){
         router.presentDetails(forCharacter: character)
     }
     func viewDidLoad() {
         view?.showActivityIndicator()
-        interactor.fetchCharacters()
+        getAllCharacters.execute()
     }
 }
 
-extension CharactersPresenter: CharactersInteractorOutput{
-    func charactersFetched(_ characters: [Character]) {
+extension CharactersPresenter: CharacterListOutput{
+    func charactersSuccess(characters: [Character]) {
         self.characters = characters
         view?.hideActivityIndicator()
     }
-    internal func charactersFetchFailed() {
+    internal func charactersFail(error: CharactersError) {
         view?.showNoContentScreen()
         view?.hideActivityIndicator()
     }
 
+}
+
+protocol CharactersListView {
+    func showActivityIndicator()
+    func hideActivityIndicator()
+    func showNoContentScreen()
+    func showCharactersData(characters: [Character])
 }
